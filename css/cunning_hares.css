@@ -1,0 +1,36 @@
+/* Globální nastavení */
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #0d0d0d; color: #fff; }
+
+header { background: #1a1a1a; color: #fff; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #ff99cc; }
+.logo { height: 45px; }
+nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+
+/* Banner */
+.banner { background: #1a1a1a; color: #fff; padding: 40px 20px; text-align: center; }
+.banner h2 { margin: 0; font-size: 2.5rem; color: #ff99cc; }
+.banner p { max-width: 700px; margin: 15px auto; opacity: 0.8; }
+
+/* Mřížka karet - nastavená jako u HSOS6 */
+.grid { display: flex; justify-content: center; gap: 20px; padding: 40px; flex-wrap: wrap; }
+
+/* Karta plyšáka */
+.card { 
+    background: #1a1a1a; 
+    border: 1px solid #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+    width: 250px;
+    transition: 0.3s;
+}
+.card:hover { border-color: #ff99cc; box-shadow: 0 0 15px rgba(255, 153, 204, 0.3); }
+.card img { width: 100%; border-radius: 5px; margin-bottom: 15px; }
+.card h3 { margin: 10px 0; font-size: 1.1em; }
+.card .price { color: #ff99cc; font-weight: bold; margin-bottom: 15px; }
+
+/* Tlačítko */
+button { 
+    background: transparent; color: #fff; border: 1px solid #ff99cc; 
+    padding: 8px 15px; border-radius: 5px; cursor: pointer; transition: 0.3s;
+}
+button:hover { background: #ff99cc; color: #000; }
