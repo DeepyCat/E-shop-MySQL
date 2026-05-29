@@ -50,7 +50,7 @@
   </div>
 </section>
 
-<a href="cart1" class="floating-cart">🛒</a>
+
 
 
 
