@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 29, 2026 at 01:03 PM
+-- Generation Time: May 29, 2026 at 02:04 PM
 -- Server version: 8.0.45-0ubuntu0.24.04.1
 -- PHP Version: 8.3.6
 
@@ -36,6 +36,19 @@ CREATE TABLE `kosik` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `objednavky`
+--
+
+CREATE TABLE `objednavky` (
+  `id` int NOT NULL,
+  `jmeno` varchar(100) NOT NULL,
+  `adresa` varchar(255) NOT NULL,
+  `celkova_cena` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `plushie`
 --
 
@@ -55,7 +68,7 @@ CREATE TABLE `plushie` (
 INSERT INTO `plushie` (`id`, `img`, `name`, `popis`, `price`, `Unit`) VALUES
 (1, 'img/anby.png', 'Anby Demara Plyšák', 'Tichá bojovnice.', 499.00, 'Cunning Hares'),
 (2, 'img/nicole.png', 'Nicole Demara Plyšák', 'Vůdkyně Cunning Hares.', 550.00, 'Cunning Hares'),
-(3, 'img/billy.png', 'Billy Kid Plyšák', 'Fanoušek akčních filmů.', 590.00, 'Cunning Hares'),
+(3, 'img/billy.png', 'Billy Kid Plyšák', 'Fanoušek akčních filmů.', 0.01, 'Cunning Hares'),
 (4, 'img/miyabi.png', 'Hoshimi Miyabi', 'Mistr techniky s hlubokým klidem.', 999.00, 'HSOS6'),
 (5, 'img/yanagi.png', 'Tsukishiro Yanagi', 'Rychlá a elegantní bojovnice.', 459.00, 'HSOS6'),
 (6, 'img/soukaku.png', 'Soukaku', 'Duch, který rád vyvolává chaos.', 529.00, 'HSOS6'),
@@ -80,6 +93,12 @@ ALTER TABLE `kosik`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `objednavky`
+--
+ALTER TABLE `objednavky`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `plushie`
 --
 ALTER TABLE `plushie`
@@ -93,7 +112,13 @@ ALTER TABLE `plushie`
 -- AUTO_INCREMENT for table `kosik`
 --
 ALTER TABLE `kosik`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+
+--
+-- AUTO_INCREMENT for table `objednavky`
+--
+ALTER TABLE `objednavky`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `plushie`
