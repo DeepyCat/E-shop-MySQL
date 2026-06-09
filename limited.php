@@ -26,15 +26,15 @@
 <section class="grid">
 <?php
 $dotaz = $conn->query("SELECT * FROM plushie WHERE Unit = 'Limited'");
-while($row = $dotaz->fetch_assoc()) {
-    echo "
-    <div class='card'>
-        <img src='" . $row['img'] . "'>
-        <h3>" . $row['name'] . "</h3>
-        <div class='price'>" . $row['price'] . " Kč</div>
-        <a href='pridat_do_db.php?id=" . $row['id'] . "'><button class='btn'>Přidat do košíku</button></a>
-    </div>";
-}
+ while($row = $dotaz->fetch_assoc()) {
+        echo "<div class='card'>";
+        echo "  <img src='" . htmlspecialchars($row['img']) . "' alt='" . htmlspecialchars($row['name']) . "'>";
+        echo "  <h3>" . htmlspecialchars($row['name']) . "</h3>";
+        echo "  <p>" . htmlspecialchars($row['popis']) . "</p>";
+        echo "  <div class='price'>" . number_format($row['price'], 0, ',', ' ') . " Kč</div>";
+        echo "<a href='pridat_do_db.php?id=" . $row['id'] . "'><button class='btn'>Přidat do košíku</button></a>";
+        echo "</div>";
+    }
 ?>
 </section>
 

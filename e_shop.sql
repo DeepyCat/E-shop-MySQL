@@ -50,11 +50,6 @@ CREATE TABLE `objednavky` (
 -- Dumping data for table `objednavky`
 --
 
-INSERT INTO `objednavky` (`id`, `jmeno`, `adresa`, `celkova_cena`) VALUES
-(8, 'kjl', 'igz', 2575.00),
-(9, 'negr', 'tomáš pachometr', 4172.00),
-(10, 'ru', 'r', 2116.00),
-(11, 'ůGW', 'KJŮ ', 4761.00);
 
 -- --------------------------------------------------------
 
@@ -90,7 +85,10 @@ INSERT INTO `plushie` (`id`, `img`, `name`, `popis`, `price`, `Unit`) VALUES
 (12, 'img/burnice.png', 'Burnice', 'Burnice miluje oheň a míchání drinků. Její plamenomety dokáží na bojišti vytvořit pekelnou atmosféru, zatímco ona se neustále usmívá.', 559.00, 'SonsOfCalydon'),
 (13, 'img/bangboo1.png', 'Sharkboo', 'Žralocí model Bangboo. Věrný společník pro každou expedici do Hollow.', 399.00, 'Bangboo'),
 (14, 'img/bangboo2.png', 'Paper bag bangboo', 'Vylepšená verze Bangboo s unikátním senzorem pro vyhledávání vzácných materiálů.', 399.00, 'Bangboo'),
-(15, 'img/limited1.png', 'Sběratelský Special Edition', 'Tento kousek je určen pro ty nejvášnivější sběratele. Vyrobeno z prémiových materiálů s unikátními detaily.', 799.00, 'Limited');
+(15, 'img/eous.png', 'Eous', 'Nejlepší bangboo kdo by si jen mohl přát', 399.00, 'Bangboo'),
+(16, 'img/limited1.png', 'Sběratelský Special Edition', 'Tento kousek je určen pro ty nejvášnivější sběratele. Vyrobeno z prémiových materiálů s unikátními detaily.', 799.00, 'Limited'),
+(17, 'img/rem.png', 'Rem', 'Nejlepší služa ever', 999.00, 'Limited'),
+(18, 'img/emilia.png', 'Emilia-tan', 'Best Half-elf ever', 999.00, 'Limited');
 
 --
 -- Indexes for dumped tables
