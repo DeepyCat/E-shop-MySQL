@@ -41,6 +41,10 @@
     }
     ?>
     <br>
+    <form action="objednat.php" method="POST">
+    <input type="text" name="jmeno" placeholder="Tvoje jméno" required>
+    <input type="text" name="adresa" placeholder="Adresa doručení" required>
+    <button type="submit">Potvrdit a odeslat objednávku</button>
     <a href="index.php" class="btn">Zpět na obchod</a>
 </div>
 
